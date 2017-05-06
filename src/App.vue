@@ -1,10 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" style="height:1000px;" v-my-click>
     <img src="./assets/logo.png">
     <router-view></router-view>
 
     <input v-my-focus>
-    <div id="hook-arguments-example" v-my-directive:red="message"></div>
   </div>
 </template>
 

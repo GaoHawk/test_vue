@@ -5,10 +5,12 @@ import App from './App'
 import router from './router'
 import MyDirective from './components/customDirectives.vue'
 import focus from './components/focus.vue'
+import MyClick from './components/customClick.vue'
 
 Vue.config.productionTip = false
 Vue.directive(MyDirective.name,MyDirective);
 Vue.directive(focus.name,focus);
+Vue.directive(MyClick.name,MyClick);
 
 /* eslint-disable no-new */
 new Vue({
