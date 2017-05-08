@@ -1,8 +1,8 @@
 <template>
-  <div id="app" style="height:1000px;" v-my-click>
+  <div id="app" style="height:1000px;">
     <img src="./assets/logo.png">
     <router-view></router-view>
-
+    <button v-my-click="{a:'1',b:'2'}">click me</button>
     <input v-my-focus>
   </div>
 </template>
@@ -12,6 +12,11 @@ export default {
   name: 'app',
   data: {
     message: 'hello!'
+  },
+  methods:{
+    testClick(value){
+        console.log(value);
+    }
   }
 }
 </script>

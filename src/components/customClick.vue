@@ -28,6 +28,10 @@ export default {
           moveY = Math.round(e.changedTouches[0].pageY - y);
           if(moveX ==0 && moveY ==0){
             console.log('this event is click');
+             console.log(binding.value);
+            if(typeof binding.value=='function'){
+              
+            }
           }
       })
 
